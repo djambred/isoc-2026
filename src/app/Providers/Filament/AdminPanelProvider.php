@@ -53,6 +53,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationGroups([
                 NavigationGroup::make()
+                    ->label('Content Management'),
+                NavigationGroup::make()
                     ->label('Administration'),
             ])
             ->userMenuItems([
@@ -65,6 +67,8 @@ class AdminPanelProvider extends PanelProvider
                 //     ->icon('heroicon-m-user-circle'),
             ])
             ->plugins([
+                \Filament\SpatieLaravelTranslatablePlugin::make()
+                    ->defaultLocales(['id', 'en']),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
                     ->gridColumns([
                         'default' => 2,

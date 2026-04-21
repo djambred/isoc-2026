@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#544600",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#0060ac",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#705d00",
+                    "surface-dim": "#d9dadb",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "outline": "#73777f",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#68abff",
+                    "on-secondary-fixed": "#001c39",
+                    "on-secondary-container": "#003e73",
+                    "secondary-fixed": "#d4e3ff",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "on-tertiary-container": "#4c3f00",
+                    "on-background": "#191c1d",
+                    "surface-variant": "#e1e3e4",
+                    "primary-container": "#002d56",
+                    "on-surface-variant": "#43474e",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed-dim": "#a7c8fa",
+                    "inverse-primary": "#a7c8fa",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#254872",
+                    "on-primary-container": "#7596c4",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#3f608b",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#a4c9ff",
+                    "on-secondary-fixed-variant": "#004883",
+                    "inverse-surface": "#2e3132",
+                    "surface-container": "#edeeef",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary": "#001833",
+                    "on-tertiary-fixed": "#221b00",
+                    "on-primary-fixed": "#001c39",
+                    "primary-fixed": "#d4e3ff",
+                    "tertiary-fixed": "#ffe16d",
+                    "outline-variant": "#c3c6d0",
+                    "surface-container-high": "#e7e8e9",
+                    "tertiary-container": "#c9a900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100/20 shadow-sm">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-[#002D56] font-headline tracking-tight">
+                ISOC Indonesia
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-600 hover:text-[#0060ac] transition-colors font-['Plus_Jakarta_Sans']" href="#">Programs</a>
+<a class="text-gray-600 hover:text-[#0060ac] transition-colors font-['Plus_Jakarta_Sans']" href="#">Resources</a>
+<a class="text-[#0060ac] font-semibold border-b-2 border-[#0060ac] font-['Plus_Jakarta_Sans']" href="#">Events</a>
+<a class="text-gray-600 hover:text-[#0060ac] transition-colors font-['Plus_Jakarta_Sans']" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#002D56] hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="universal_accessibility">accessibility</span>
+</button>
+<button class="p-2 text-[#002D56] hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-semibold hover:opacity-90 transition-all">
+                    Join Us
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-semibold tracking-widest uppercase text-sm mb-4 block">Calendar 2024</span>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline text-primary leading-tight tracking-tighter mb-6">
+                        Events &amp; <span class="text-secondary">Conferences.</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-lg">
+                        Membangun masa depan internet yang terbuka, terhubung secara global, dan aman melalui kolaborasi komunitas di seluruh Indonesia.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="p-4 rounded-full border border-outline-variant hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+<button class="flex items-center gap-2 bg-surface-container-high px-6 py-4 rounded-xl font-semibold">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                        Download Schedule
+                    </button>
+</div>
+</div>
+</header>
+<!-- Featured Event Bento -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Highlighted Card -->
+<div class="md:col-span-8 relative rounded-xl overflow-hidden group h-[500px] bg-primary-container">
+<img alt="Tech Conference" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Modern tech conference hall with blue atmospheric lighting, large screens displaying abstract data, and professional audience in silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQa1MiT-JAzN7x8WbqAfzdNaxFE9exOneNtPe2BI9vmX0USTsaYA3jRSZ7YdP4H87lvCCToPX6WSYx-3fGaxmniFFCqaIy15z5EWk9WQi7U40-rQFa5VIsKHFRCUIsudeOYD5qBTQfJop1dSq8Qs23_pUHRm39U_FBs8pvgN0qFFxNjUX6tgPRZcSSI-tJTeVcPEw5GhgMRtu1GayOfd-jfl3qUcJ8Mlzgci-oIEGOKC5CTnRCY7VLDef3M8ht6wbgqggVpk6YWVc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10 text-white">
+<div class="flex gap-2 mb-4">
+<span class="px-4 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs font-bold uppercase tracking-wider">Upcoming Major</span>
+<span class="px-4 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-medium">October 24-26, 2024</span>
+</div>
+<h2 class="text-4xl font-bold font-headline mb-4 max-w-xl">Indonesia Internet Governance Forum (ID-IGF) 2024</h2>
+<p class="text-blue-100/80 mb-8 max-w-lg">Pertemuan tahunan para pemangku kepentingan internet Indonesia untuk mendiskusikan kebijakan dan tata kelola digital masa depan.</p>
+<div class="flex items-center gap-6">
+<button class="bg-white text-primary px-8 py-4 rounded-md font-bold hover:bg-secondary-fixed transition-colors">Daftar Sekarang</button>
+<a class="flex items-center gap-2 font-semibold hover:underline decoration-2" href="#">
+                                Detail Acara <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Secondary Small Bento -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="bg-surface-container-low p-8 rounded-xl flex-1 flex flex-col justify-between">
+<div>
+<span class="text-secondary font-bold text-xs uppercase tracking-tighter mb-2 block">Webinar</span>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4 tracking-tight">Keamanan Siber &amp; Enkripsi Data</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                                14:00 - 16:00 WIB
+                            </div>
+</div>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-md hover:bg-primary hover:text-white transition-all">Ingatkan Saya</button>
+</div>
+<div class="bg-[#ffe16d] p-8 rounded-xl flex-1 flex flex-col justify-between">
+<div>
+<span class="text-on-tertiary-fixed-variant font-bold text-xs uppercase tracking-tighter mb-2 block">Workshop</span>
+<h3 class="text-2xl font-bold font-headline text-on-tertiary-fixed-variant mb-4 tracking-tight">Hands-on: Routing Security (MANRS)</h3>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-[#ffe16d] bg-gray-200"></div>
+<div class="w-10 h-10 rounded-full border-2 border-[#ffe16d] bg-gray-300"></div>
+<div class="w-10 h-10 rounded-full border-2 border-[#ffe16d] bg-gray-400 flex items-center justify-center text-[10px] font-bold">+12</div>
+</div>
+<button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="mt-32">
+<h2 class="text-3xl font-bold font-headline text-primary mb-12 flex items-center gap-4">
+<span class="w-12 h-[2px] bg-secondary"></span>
+                Agenda Mendatang
+            </h2>
+<div class="space-y-12">
+<!-- Timeline Item 1 -->
+<div class="flex flex-col md:flex-row gap-8 items-start relative pb-12 border-l-2 border-surface-container-highest ml-8 pl-12">
+<div class="absolute -left-[41px] top-0 w-20 h-20 bg-white rounded-xl shadow-sm border border-outline-variant flex flex-col items-center justify-center">
+<span class="text-xs font-bold text-secondary uppercase">Nov</span>
+<span class="text-3xl font-black text-primary">05</span>
+</div>
+<div class="flex-1 bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-secondary-container transition-all">
+<div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+<div>
+<span class="text-sm font-semibold text-secondary mb-1 block">Panel Diskusi</span>
+<h3 class="text-2xl font-bold font-headline text-primary">Kedaulatan Data di Era Cloud Computing</h3>
+</div>
+<span class="bg-surface-container-low px-4 py-1.5 rounded-full text-xs font-bold text-on-surface-variant">ONLINE</span>
+</div>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Membahas tantangan regulasi dan teknis dalam menjaga privasi data pengguna Indonesia di infrastruktur cloud global.</p>
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-2 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+                                Zoom Meeting &amp; YouTube Live
+                            </div>
+<div class="flex items-center gap-2 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="group">group</span>
+                                250+ Peserta Terdaftar
+                            </div>
+<button class="ml-auto bg-primary text-white px-6 py-3 rounded-md text-sm font-bold hover:bg-secondary transition-colors">Daftar Sekarang</button>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex flex-col md:flex-row gap-8 items-start relative pb-12 border-l-2 border-surface-container-highest ml-8 pl-12">
+<div class="absolute -left-[41px] top-0 w-20 h-20 bg-white rounded-xl shadow-sm border border-outline-variant flex flex-col items-center justify-center">
+<span class="text-xs font-bold text-secondary uppercase">Nov</span>
+<span class="text-3xl font-black text-primary">12</span>
+</div>
+<div class="flex-1 bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-secondary-container transition-all">
+<div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+<div>
+<span class="text-sm font-semibold text-secondary mb-1 block">Community Meetup</span>
+<h3 class="text-2xl font-bold font-headline text-primary">ISOC Jakarta Chapter Annual Gathering</h3>
+</div>
+<span class="bg-tertiary-container/20 px-4 py-1.5 rounded-full text-xs font-bold text-tertiary">OFFLINE</span>
+</div>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Temu kangen dan networking bagi anggota ISOC Indonesia. Sesi sharing pengalaman dan update program kerja 2025.</p>
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-2 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+                                Jakarta Digital Hub, BSD City
+                            </div>
+<div class="flex items-center gap-2 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="confirmation_number">confirmation_number</span>
+                                Terbatas 50 Kursi
+                            </div>
+<button class="ml-auto bg-primary text-white px-6 py-3 rounded-md text-sm font-bold hover:bg-secondary transition-colors">Reservasi Tempat</button>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex flex-col md:flex-row gap-8 items-start relative ml-8 pl-12">
+<div class="absolute -left-[41px] top-0 w-20 h-20 bg-white rounded-xl shadow-sm border border-outline-variant flex flex-col items-center justify-center">
+<span class="text-xs font-bold text-secondary uppercase">Dec</span>
+<span class="text-3xl font-black text-primary">02</span>
+</div>
+<div class="flex-1 bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-secondary-container transition-all">
+<div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+<div>
+<span class="text-sm font-semibold text-secondary mb-1 block">Course</span>
+<h3 class="text-2xl font-bold font-headline text-primary">Digital Literacy for Educators</h3>
+</div>
+<span class="bg-surface-container-low px-4 py-1.5 rounded-full text-xs font-bold text-on-surface-variant">HYBRID</span>
+</div>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Program pelatihan intensif bagi guru dan dosen untuk mengintegrasikan literasi digital yang aman dalam kurikulum sekolah.</p>
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-2 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="layers">layers</span>
+                                Sertifikat ISOC &amp; Kementerian
+                            </div>
+<button class="ml-auto bg-primary text-white px-6 py-3 rounded-md text-sm font-bold hover:bg-secondary transition-colors">Daftar Program</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription -->
+<section class="mt-32 bg-primary rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl -ml-20 -mb-20"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="text-3xl md:text-4xl font-bold text-white font-headline mb-4">Jangan Lewatkan Acara Berikutnya.</h2>
+<p class="text-blue-200">Dapatkan notifikasi langsung ke email Anda tentang webinar, workshop, dan konferensi ISOC Indonesia.</p>
+</div>
+<form class="w-full max-w-lg flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-white/10 border border-white/20 rounded-xl px-6 py-4 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-secondary-container" placeholder="Alamat email Anda" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container font-bold px-8 py-4 rounded-xl hover:bg-white transition-all whitespace-nowrap" type="submit">Langganan</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f5] py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-[#002D56] font-headline">ISOC Indonesia Chapter</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-gray-500 hover:text-[#002D56] transition-all text-sm font-body" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-[#002D56] transition-all text-sm font-body" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-[#002D56] transition-all text-sm font-body" href="#">Accessibility Statement</a>
+<a class="text-gray-500 hover:text-[#002D56] transition-all text-sm font-body" href="#">Contact</a>
+</div>
+<p class="text-gray-500 text-sm font-body">
+                © 2024 ISOC Indonesia Chapter. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

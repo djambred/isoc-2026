@@ -10,6 +10,7 @@ use Filament\Pages\Page;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\ValidationException;
 use Spatie\Activitylog\Models\Activity;
@@ -41,6 +42,11 @@ class AppServiceProvider extends ServiceProvider
         };
         MountableAction::configureUsing(function (MountableAction $action) {
             $action->modalFooterActionsAlignment(Alignment::Right);
+        });
+
+        View::composer('partials.footer', function ($view) {
+            $settings = \App\Models\SiteSetting::all()->pluck('value', 'key')->toArray();
+            $view->with('settings', $settings);
         });
     }
 }

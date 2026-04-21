@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs - ISOC Indonesia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#544600",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#0060ac",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#705d00",
+                    "surface-dim": "#d9dadb",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "outline": "#73777f",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#68abff",
+                    "on-secondary-fixed": "#001c39",
+                    "on-secondary-container": "#003e73",
+                    "secondary-fixed": "#d4e3ff",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "on-tertiary-container": "#4c3f00",
+                    "on-background": "#191c1d",
+                    "surface-variant": "#e1e3e4",
+                    "primary-container": "#002d56",
+                    "on-surface-variant": "#43474e",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed-dim": "#a7c8fa",
+                    "inverse-primary": "#a7c8fa",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#254872",
+                    "on-primary-container": "#7596c4",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#3f608b",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#a4c9ff",
+                    "on-secondary-fixed-variant": "#004883",
+                    "inverse-surface": "#2e3132",
+                    "surface-container": "#edeeef",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary": "#001833",
+                    "on-tertiary-fixed": "#221b00",
+                    "on-primary-fixed": "#001c39",
+                    "primary-fixed": "#d4e3ff",
+                    "tertiary-fixed": "#ffe16d",
+                    "outline-variant": "#c3c6d0",
+                    "surface-container-high": "#e7e8e9",
+                    "tertiary-container": "#c9a900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#001833]/80 backdrop-blur-md shadow-sm border-b border-gray-100/20 dark:border-white/5">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="text-xl font-bold text-[#002D56] dark:text-white">ISOC Indonesia</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#0060ac] dark:text-blue-300 font-semibold border-b-2 border-[#0060ac] transition-colors duration-300 ease-in-out" href="#">Programs</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-[#0060ac] dark:hover:text-blue-300 transition-colors duration-300 ease-in-out" href="#">Resources</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-[#0060ac] dark:hover:text-blue-300 transition-colors duration-300 ease-in-out" href="#">Events</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-[#0060ac] dark:hover:text-blue-300 transition-colors duration-300 ease-in-out" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary transition-colors" data-icon="universal_accessibility">accessibility</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary transition-colors" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-semibold hover:opacity-90 transition-all">Join Us</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-16">
+<div class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold uppercase tracking-widest mb-6">
+                Strategic Initiatives
+            </div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-6">
+                Empowering the<br/><span class="text-secondary">Open Internet.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed">
+                Kami merancang inisiatif untuk memastikan internet tetap terbuka, terhubung secara global, aman, dan dapat dipercaya bagi seluruh rakyat Indonesia.
+            </p>
+</header>
+<!-- Bento Grid Programs -->
+<div class="bento-grid">
+<!-- Program 1: Digital Literacy Bootcamp (Large Feature) -->
+<section class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden group border border-outline-variant/10 shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
+<img alt="Digital Literacy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="diverse group of young Indonesian students collaborating in a high-tech modern classroom with laptops and digital screens, warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV1InpBw9RiEcjRBDpkTe-Fs084rQAcozeFfI9Gi4kZpw9UV_ttB26QwyWI40gK-p86Hs3s3C89PFLAlhMHN7CW65NNy4j95i1VRIGKjFvbB7e-GtwY8BhddECSprvG8BUmWs-KHZIel62Wudgqic5nWX3XlrDqxXZ1bQWybKuZROm8dcxhZwY0Upcr4ia4jbVESPLNdW0Y6fujMbyAMtRvqmtXLfHe7h8gwwfRhreeJwothOtni2wIZ-NpUS_WJeZEuwxDdBbe5M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="school">school</span>
+<h2 class="font-headline text-3xl font-bold text-primary mb-4">Digital Literacy Bootcamp</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            Membangun kompetensi digital masyarakat melalui kurikulum intensif yang mencakup keamanan siber dasar, etika digital, dan manajemen informasi.
+                        </p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:bg-primary transition-colors">
+                                Pelajari Program
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Program 2: Policy Advocacy (Small Card) -->
+<section class="col-span-12 md:col-span-6 lg:col-span-4 bg-primary-container text-white rounded-xl p-8 flex flex-col justify-between transition-all hover:-translate-y-1">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="gavel">gavel</span>
+</div>
+<h2 class="font-headline text-2xl font-bold mb-4">Policy Advocacy</h2>
+<p class="text-on-primary-container leading-relaxed">
+                        Mendorong kebijakan publik yang mendukung pertumbuhan infrastruktur internet dan melindungi hak digital warga negara.
+                    </p>
+</div>
+<a class="mt-8 text-secondary-fixed flex items-center gap-2 font-semibold hover:gap-3 transition-all" href="#">
+                    Detail Kebijakan <span class="material-symbols-outlined" data-icon="trending_flat">trending_flat</span>
+</a>
+</section>
+<!-- Program 3: Infrastruktur Inklusif (Medium Card) -->
+<section class="col-span-12 md:col-span-6 lg:col-span-5 bg-surface-container-high rounded-xl p-8 border border-outline-variant/20 flex flex-col">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="router">router</span>
+<h2 class="font-headline text-2xl font-bold text-primary mb-4">Infrastruktur Inklusif</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                    Mendukung pengembangan Community Networks di wilayah terpencil untuk mempersempit kesenjangan digital di seluruh pelosok Indonesia.
+                </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Connectivity</span>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest border-2 border-surface-container-high flex items-center justify-center text-[10px] font-bold">+12 Partners</div>
+</div>
+</div>
+</section>
+<!-- Program 4: Community Growth (Medium Card) -->
+<section class="col-span-12 lg:col-span-7 bg-white rounded-xl p-8 border border-outline-variant/10 shadow-sm flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/3 aspect-square rounded-xl overflow-hidden relative">
+<img alt="Community" class="w-full h-full object-cover" data-alt="smiling diverse professionals sitting around a conference table in a modern bright office with glass walls, collaborative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArmlOlwi95EBZ4jv1MkMgr8Nt4UlQfbzuNL-ebCgRtYpAiM0UU5_WOy4nBL4YZBDCyQLJFsvGyD5xI4G_hg0f3_4f_j7u8On6Gfr0y2RMBKZYR43cMksPhqz_y-xIk4R6C8u04TlkiBYKgOzctTHwBEq0pEUO3sRS5tc-dL6r6KQI6MPgUiyp10TUiFTrdBxCtqQoNlyKSmhJV2FveH4tCAT783GRIcnuKanMmVfTWC5ZN-XLZ5XkxVs3zNzgGEbc9KuPEW18BYew"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="groups">groups</span>
+<span class="text-sm font-semibold text-on-surface-variant">Community Focus</span>
+</div>
+<h2 class="font-headline text-2xl font-bold text-primary mb-3">Chapter Community Growth</h2>
+<p class="text-on-surface-variant mb-6">
+                        Memperluas jaringan keanggotaan ISOC Indonesia dan memberdayakan talenta lokal untuk berkontribusi secara global.
+                    </p>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline decoration-secondary decoration-2 underline-offset-4 transition-all">
+                        Gabung Komunitas <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Stats Module -->
+<section class="col-span-12 lg:col-span-4 bg-tertiary-container text-on-tertiary-container rounded-xl p-8 flex flex-col justify-center text-center">
+<h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-4">Impact reaching</h3>
+<div class="text-6xl font-black mb-2">15K+</div>
+<p class="text-on-tertiary-container/80 font-medium italic">Penerima manfaat di 34 provinsi</p>
+</section>
+<!-- Cyber Security Training (Horizontal) -->
+<section class="col-span-12 lg:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 border border-outline-variant/20">
+<div class="flex-1">
+<h2 class="font-headline text-2xl font-bold text-primary mb-4">Cyber Security Awareness</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                        Pelatihan khusus untuk jurnalis, aktivis, dan UMKM untuk melindungi data dan privasi dalam ekosistem digital yang semakin kompleks.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 rounded-full bg-white text-primary text-xs font-bold border border-outline-variant/20">Encryption</span>
+<span class="px-4 py-1.5 rounded-full bg-white text-primary text-xs font-bold border border-outline-variant/20">Privacy</span>
+<span class="px-4 py-1.5 rounded-full bg-white text-primary text-xs font-bold border border-outline-variant/20">Safety</span>
+</div>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<span class="material-symbols-outlined text-[120px] text-primary/10" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+</section>
+</div>
+<!-- CTA Section -->
+<section class="mt-24 bg-primary text-white rounded-[2rem] p-12 md:p-20 relative overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-[80px] -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/10 rounded-full blur-[80px] -ml-32 -mb-32"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-8">Punya ide inisiatif yang berdampak?</h2>
+<p class="text-on-primary-container text-lg mb-10 leading-relaxed">
+                    Kami selalu terbuka untuk kolaborasi strategis yang sejalan dengan misi ISOC untuk menjaga internet tetap terbuka dan aman bagi semua.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-bold text-lg hover:bg-secondary/90 transition-all">Hubungi Kami</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">Proposal Kemitraan</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f5] dark:bg-[#001833] w-full py-12 px-8 font-['Inter'] text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-[#002D56] dark:text-white">ISOC Indonesia</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#002D56] dark:hover:text-white transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#002D56] dark:hover:text-white transition-all duration-200" href="#">Terms of Service</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#002D56] dark:hover:text-white transition-all duration-200" href="#">Accessibility Statement</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#002D56] dark:hover:text-white transition-all duration-200" href="#">Contact</a>
+</div>
+<div class="text-gray-500 dark:text-gray-400">
+                © 2024 ISOC Indonesia Chapter. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
