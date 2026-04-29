@@ -57,6 +57,12 @@ docker compose up -d nginx php db
 echo "      Menunggu nginx siap..."
 sleep 5
 
+# 5. Bersihkan akun certbot lama jika ada (mencegah error "Account not found")
+if [ -d "./certbot/conf/accounts" ]; then
+    echo "[5/5] Menghapus data akun certbot lama..."
+    rm -rf ./certbot/conf/accounts
+fi
+
 # 5. Request sertifikat Let's Encrypt asli
 echo "[5/5] Meminta sertifikat Let's Encrypt untuk ${DOMAIN}..."
 docker compose run --rm certbot certonly \
